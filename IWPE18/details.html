@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--[if lt IE 7 ]> <html lang="en-US" class="no-js ie6"> <![endif]--><!--[if IE 7 ]>    <html lang="en-US" class="no-js ie7"> <![endif]--><!--[if IE 8 ]>    <html lang="en-US" class="no-js ie8"> <![endif]--><!--[if IE 9 ]>    <html lang="en-US" class="no-js ie9"> <![endif]--><!--[if (gt IE 9)|!(IE)]><!--><!--<![endif]--><!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame --><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>2018 International Workshop on Privacy Engineering - IWPE&#39;18 / International Workshop on Privacy Engineering</title>
+	<!--  Mobile viewport optimized: j.mp/bplateviewport --><meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./css/css.css" id="open-sans-css" media="all" rel="stylesheet" type="text/css" />
+	<link href="./css/style.css" id="highwind-styles-css" media="all" rel="stylesheet" type="text/css" />
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" /><script type="text/javascript" src="./js/jquery.js"></script><script type="text/javascript" src="./js/jquery-migrate.js"></script><script type="text/javascript" src="./js/modernizr.js"></script><script type="text/javascript" src="./js/fitvids.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script><!--Customize CSS--><script type="text/javascript" src="./js/plugins.js"></script><script type="text/javascript" src="./js/script.js"></script>
+	<style type="text/css">a{color:#51b590}input[type="submit"],.button,input[type="button"],.navigation-post a,.navigation-paging a,.header,.comments .bypostauthor>.comment-body .comment-content{background-color:#51b590}body,input[type="text"],input[type="password"],input[type="email"],input[type="search"],input.input-text,textarea{color:#63756e}.comments .bypostauthor>.comment-body .comment-content:after{border-bottom-color:#51b590}hr,input[type="checkbox"],input[type="radio"]{background:#63756e}input[type="radio"]{border-color:#63756e}h1,h2,h3,h4,h5,h6,.alpha,.beta,.gamma,.delta,.page-title,.post-title{color:#44544a}input[type="submit"],.button,input[type="button"],.navigation-post a,.navigation-paging a,input[type="checkbox"]:before,input[type="checkbox"]:checked:before,.comments .bypostauthor>.comment-body .comment-content,.comments .bypostauthor>.comment-body .comment-content a{color:#f8f8f9}.comments .comment-content:after{border-bottom-color:#f8f8f9}.inner-wrap,.main-nav{background-color:#f8f8f9}@media only screen and (min-width:769px){.main-nav ul.menu ul,.main-nav ul.menu>li:hover>a,.main-nav ul.menu>li>a:hover{background:#51b590}.main-nav ul.menu li.current-menu-item>a{color:##51b590}.main-nav{border-color:#51b590}.main-nav ul.menu li.current-menu-item>a:before{border-bottom-color:#51b590}.main-nav ul.menu ul a,.main-nav ul.menu>li:hover>a{color:##f8f8f9}body{background-color:#f8f8f9}}
+	</style>
+	<!--/Customize CSS-->
+	<style id="custom-background-css" type="text/css">body.custom-background{background-color:#f8f8f9}
+	</style>
+</head>
+<body class="home page page-id-8 page-template-default custom-background no-background-contrast">
+<div class="outer-wrap" id="top">
+<div class="inner-wrap">
+<div class="content-wrapper">
+<h1 class="text-center">April 27</h1>
+
+<hr />
+<div class="panel-group" id="opening">
+<div class="panel panel-default">
+<div class="panel-heading">
+<div class="row">
+<div class="col-md-6 pull-left">
+<h3 class="panel-title"><b>Welcome, introductions and opening remarks <!--<a href='./slides/S0.pdf'>(slides)</a>--></b></h3>
+</div>
+
+<div class="col-md-6 pull-right">
+<h3 class="panel-title text-right">9:00AM - 9:10AM</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel-group" id="sesion1">
+<div class="panel panel-default">
+<div class="panel-heading">
+<div class="row">
+<div class="col-md-6 pull-left">
+<h3 class="panel-title">Session 1: Threat modeling</h3>
+</div>
+
+<div class="col-md-6 pull-right">
+<h3 class="panel-title text-right">9:10AM - 9:50AM</h3>
+</div>
+</div>
+</div>
+
+<div class="panel-body">
+<div class="list-group-item"><b><a data-parent="#session1" data-toggle="collapse" href="#paper1">Interaction-based Privacy Threat Elicitation </a></b> <a href='./slides/S11.pdf'>(slides)</a><br />
+<u>Laurens Sion</u>, Kim Wuyts, Koen Yskout, Dimitri Van Landuyt and Wouter Joosen</div>
+
+<div class="panel-collapse collapse" id="paper1">
+<div class="panel-body" style="margin-left: 1.5em;">Threat modeling involves the systematic identification, elicitation, and analysis of privacy- and/or security-related threats in the context of a specific system. These modeling practices are performed at a specific level of architectural abstraction &ndash; the use of Data Flow Diagram (DFD) models, for example, is common in this context.<br />
+To identify and elicit threats, two fundamentally different approaches can be taken: (1) elicitation on a per-element basis involves iteratively singling out individual architectural elements and considering the applicable threats, (2) elicitation at the level of system interactions (which involve the local context of three elements: a source, a data flow, and a destination) performs elicitation at the basis of system-level communication. Although not considering the local context of the element under investigation makes the former approach easier to adopt and use for human analysts, this approach also leads to threat duplication and redundancy, relies more extensively on implicit analyst expertise, and requires more manual effort.<br />
+In this paper, we provide a detailed analysis of these issues with element-based threat elicitation in the context of LINDDUN, an element-driven privacy-by-design threat modeling methodology. Subsequently, we present a LINDDUN extension that implements interaction-based privacy threat elicitation and we provide indepth argumentation on how this approach leads to better process guidance and more concrete interpretation of privacy threat types, ultimately requiring less effort and expertise. A third standalone contribution of this work is a catalog of realistic and illustrative LINDDUN privacy threats, which in turn facilitates practical threat elicitation using LINDDUN.</div>
+</div>
+
+<div class="list-group-item"><b><a data-parent="#session1" data-toggle="collapse" href="#paper2">The Odyssey: challenges to model privacy threats in a brave new world </a></b> <a href='./slides/S12.pdf'>(slides)</a><br />
+<u>Rafa G&aacute;lvez</u> and Seda G&uuml;rses</div>
+
+<div class="panel-collapse collapse" id="paper2">
+<div class="panel-body" style="margin-left: 1.5em;">In the upcoming General Data Protection Regulation (GDPR), privacy by design and privacy impact assessments are given an even more prominent role than before. It is now required that companies build privacy into the core of their technical products. Recently, researchers and industry players have proposed employing threat modeling methods, traditionally used in security engineering, as a way to bridge these two GDPR requirements in the process of engineering systems.<br />
+Threat modeling, however, typically assumes a waterfall process and monolithic design, assumptions that are disrupted with the popularization of Agile methodologies and Service Oriented Architectures. Moreover, agile service environments make it easier to address some privacy problems, while complicating others. To date, the challenges of applying threat modeling for privacy in agile service environments remain understudied.<br />
+This paper sets out to expose and analyze this gap. Specifically, we analyze what challenges and opportunities the shifts in software engineering practice introduce into traditional Threat Modeling activities; how they relate to the different Privacy Goals; and what Agile principles and Service properties have an impact on them.<br />
+Our results show that both agile and services make the end-to-end analysis of applications more difficult. At the same time, the former allows for more efficient communications and iterative progress, while the latter enables the parallelization of tasks and the documentation of some architecture decisions. Additionally, we open a new research avenue pointing to Amazon Macie as an example of Machine Learning applications that aim to provide a solution to the scalability and usability of Privacy Threat Modeling processes.</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel-group" id="sesion2">
+<div class="panel panel-default">
+<div class="panel-heading">
+<div class="row">
+<div class="col-md-6 pull-left">
+<h3 class="panel-title">Session 2: Privacy risk measurement and analysis</h3>
+</div>
+
+<div class="col-md-6 pull-right">
+<h3 class="panel-title text-right">9:50AM - 10:30AM</h3>
+</div>
+</div>
+</div>
+
+<div class="panel-body">
+<div class="list-group-item"><b><a data-parent="#session2" data-toggle="collapse" href="#paper3">Privacy Risk Analysis to Enable Informed Privacy Settings </a></b> <!--<a href='./slides/S2-P1.pdf'>(slides)</a>--><br />
+Sourya Joyee De and <u>Daniel Le Metayer</u></div>
+
+<div class="panel-collapse collapse" id="paper3">
+<div class="panel-body" style="margin-left: 1.5em;">The work described in this paper is a contribution to enhancing individual control over personal data which is promoted, inter alia, by the new EU General Data Protection Regulation. We propose a method to enable better informed choices of privacy settings. The method relies on a privacy risk analysis parameterized by privacy settings. The user can express his choices, visualize their impact on the privacy risks through a user-friendly interface and, if needed, decide to revise them to reduce risks to an acceptable level.</div>
+</div>
+
+<div class="list-group-item"><b><a data-parent="#session2" data-toggle="collapse" href="#paper4">FP-Tester: Automated Testing of Browser Fingerprint Resilience </a></b><!--<a href='./slides/S1-P4-KielBrennanMarquez.pdf'>(slides)</a>--><br />
+<u>Antoine Vastel</u>, Walter Rudametkin and Romain Rouvoy</div>
+
+<div class="panel-collapse collapse" id="paper4">
+<div class="panel-body" style="margin-left: 1.5em;">Despite recent regulations and growing user awareness, undesired browser tracking is increasing. In addition to cookies, browser fingerprinting is a stateless technique that exploits a device&rsquo;s configuration for tracking purposes. In particular, browser fingerprinting builds on attributes made available from Javascript and HTTP headers to create a unique and stable fingerprint. For example, browser plugins have been heavily exploited by state-of-the-art browser fingerprinters as a rich source of entropy. However, as browser vendors abandon plugins in favor of extensions, fingerprinters will adapt.<br />
+We present FP-TESTER, an approach to automatically test the effectiveness of browser fingerprinting countermeasure extensions. We implement a testing toolkit to be used by developers to reduce browser fingerprintability. While countermeasures aim to hinder tracking by changing or blocking attributes, they may easily introduce subtle side-effects that make browsers more identifiable, rendering the extensions counterproductive. FP-TESTER reports on the side-effects introduced by the countermeasure, as well as how they impact tracking duration from a fingerprinter&rsquo;s point-of-view. To the best of our knowledge, FP-TESTER is the first tool to assist developers in fighting browser fingerprinting and reducing the exposure of end-users to such privacy leaks.</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel-group" id="break1">
+<div class="panel panel-default">
+<div class="panel-heading">
+<div class="row">
+<div class="col-md-6 pull-left">
+<h3 class="panel-title">Break (30 Minutes)</h3>
+</div>
+
+<div class="col-md-6 pull-right">
+<h3 class="panel-title text-right">10:30AM - 11:00AM</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel-group" id="sesion3">
+<div class="panel panel-default">
+<div class="panel-heading">
+<div class="row">
+<div class="col-md-6 pull-left">
+<h3 class="panel-title">Session 3: General Data Protection Regulation</h3>
+</div>
+
+<div class="col-md-6 pull-right">
+<h3 class="panel-title text-right">11:00AM - 11:20AM</h3>
+</div>
+</div>
+</div>
+
+<div class="panel-body">
+<div class="list-group-item"><b><a data-parent="#session3" data-toggle="collapse" href="#paper5">Methods and Tools for GDPR Compliance through Privacy and Data Protection Engineering </a></b> <!--<a href='./slides/S2-P1-ChienLunChen.pdf'>(slides)</a>--><br />
+<u>Yod Samuel Mart&iacute;n Garc&iacute;a</u> and Antonio Kung</div>
+
+<div class="panel-collapse collapse" id="paper5">
+<div class="panel-body" style="margin-left: 1.5em;">In this position paper we posit that, for Privacy by Design to be viable, engineers must be effectively involved and endowed with methodological and technological tools closer to their mindset, and which integrate within software and systems engineering methods and tools, realizing in fact the definition of Privacy Engineering. This position will be applied in the soon-to-start PDP4E project, where privacy will be introduced into existent general-purpose software engineering tools and methods, dealing with (risk management, requirements engineering, model-driven design, and software/systems assurance).</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel-group" id="panel1">
+<div class="panel panel-default">
+<div class="panel-heading">
+<div class="row">
+<div class="col-md-6 pull-left">
+<h3 class="panel-title"><b><a data-parent="#panel1" data-toggle="collapse" href="#abstractPanel1">Panel: GDPR and Privacy Engineering</a> </b><br />
+<!--Moderator: Nina Taft (Google) <br> -->Moderator: Nina Taft&nbsp;(Google)<br />
+Panel: Saikat Guha (Microsoft), Ben Livshits (Brave), Michael Wei (VMWare), Gary Young (Google)</h3>
+</div>
+
+<div class="col-md-6 pull-right">
+<h3 class="panel-title text-right">11:20AM - 12:30PM</h3>
+</div>
+</div>
+</div>
+
+<div class="panel-collapse collapse" id="abstractPanel1">
+<div class="panel-body" style="margin-left: 1.5em;"><!--Panel abstract.-->The panel will discuss how privacy engineering tools, methodologies and practices have evolved in light of the GDPR requirements. The focus will be on how solutions have evolved for data minimization, anonymization, flow control, privacy patterns, and retention. The panelists will share lessons learned and highlight challenges<br />
+<br />
+<i><b>Saikat Guha </b> is a researcher at Microsoft Research India.</i><br />
+<i><b>Ben Livshits</b> is the Chief Scientist for Brave and Associate Professor at Imperial College London.</i><br />
+<i><b>Michael Wei</b> is a researcher at VMWare Research.</i>&nbsp;</div>
+
+<div class="panel-body" style="margin-left: 1.5em;"><i><b>Gary Young</b> is a Privacy Analyst Engineer at Google.</i></div>
+</div>
+</div>
+</div>
+
+<div class="panel-group" id="lunch">
+<div class="panel panel-default">
+<div class="panel-heading">
+<div class="row">
+<div class="col-md-6 pull-left">
+<h3 class="panel-title">Lunch</h3>
+</div>
+
+<div class="col-md-6 pull-right">
+<h3 class="panel-title text-right">12:30PM - 2:00PM</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel-group" id="invited2">
+<div class="panel panel-default">
+<div class="panel-heading">
+<div class="row">
+<div class="col-md-6 pull-left">
+<h3 class="panel-title"><b><a data-parent="#invited2" data-toggle="collapse" href="#abstract2">Genomic Privacy: Are we heading in the right direction?</a>&nbsp;</b><!--<a href='./slides/Intro.pdf'>(slides)</a>--><br />
+Invited talk by Emiliano De Cristofaro (University College London)</h3>
+</div>
+
+<div class="col-md-6 pull-right">
+<h3 class="panel-title text-right">2:00PM - 3:15PM</h3>
+</div>
+</div>
+</div>
+
+<div class="panel-collapse collapse" id="abstract2">
+<div class="panel-body" style="margin-left: 1.5em;">Rapid advances in human genomics are enabling researchers to gain a better understanding of the role of the genome w.r.t. our ancestry, health, and well-being. While this prompts hope for more cost efficient and effective healthcare, it also yields a number of security and privacy concerns, stemming from the distinctive characteristics of genomic data. Aiming to address them, a new research community has emerged, producing a large number of publications and initiatives.<br />
+In this talk, we will present an overview of the relevant results in the field, using a structured methodology to systematize the current knowledge around genome privacy research. We will focus on privacy-enhancing technologies used in the context of testing, storing, and sharing genomic data, and provide critical viewpoints as well as a comprehensive analysis on the timeliness and the relevance of the work produced by the community. In doing so, we will argue that proposed technologies can only offer protection in the short-term, scrutinizing assumptions made by the community, and analyzing the costs introduced by privacy defenses in terms of various types of utility and flexibility overhead.<br />
+<br />
+<i><b>Emiliano De Cristofaro</b> is a Reader (British English for Associate Professor) in Security and Privacy Enhancing Technologies at University College London (UCL), where he is affiliated with the Computer Science Department and the Information Security Group. Before joining UCL in 2013, he was a research scientist at Xerox PARC. He received a summa-cum-laude Laurea degree in Computer Science from the University of Salerno, Italy (2005), then, in 2011, a PhD in Networked Systems from the University of California, Irvine, advised by Prof. Gene Tsudik (mostly, while running on the beach). In 2013-14, Emiliano co-chaired the Privacy Enhancing Technologies Symposium (PETS), in the 2015, the Workshop on Genome Privacy and Security (GenoPri), and, in 2018, the security and privacy track at WWW. Recently, he also received the distinguished paper award from NDSS 2018. </i></div>
+</div>
+</div>
+</div>
+
+<div class="panel-group" id="bestPaper">
+<div class="panel panel-default">
+<div class="panel-heading">
+<div class="row">
+<div class="col-md-6 pull-left">
+<h3 class="panel-title">Best Paper Award Ceremony</h3>
+</div>
+
+<div class="col-md-6 pull-right">
+<h3 class="panel-title text-right">3:15PM - 3:30PM</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel-group" id="break2">
+<div class="panel panel-default">
+<div class="panel-heading">
+<div class="row">
+<div class="col-md-6 pull-left">
+<h3 class="panel-title">Break (30 Minutes)</h3>
+</div>
+
+<div class="col-md-6 pull-right">
+<h3 class="panel-title text-right">3:30PM - 4:00PM</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel-group" id="session4">
+<div class="panel panel-default">
+<div class="panel-heading">
+<div class="row">
+<div class="col-md-6 pull-left">
+<h3 class="panel-title">Session 4: Privacy by Design</h3>
+</div>
+
+<div class="col-md-6 pull-right">
+<h3 class="panel-title text-right">4:00PM - 4:50PM</h3>
+</div>
+</div>
+</div>
+
+<div class="panel-body">
+<div class="list-group-item"><b><a data-parent="#session4" data-toggle="collapse" href="#paper6">It Takes a Village: A Community Based Participatory Framework for Privacy Design </a></b> <a href='./slides/S41.pdf'>(slides)</a> <br/> 
+<u>Darakhshan Mir</u>, Yan Shvartzshnaider and Mark Latonero</div>
+
+<div class="panel-collapse collapse" id="paper6">
+<div class="panel-body" style="margin-left: 1.5em;">As data-centric technologies are increasingly being considered in social contexts that intervene in marginalized peoples&rsquo; lives, we consider design paradigms to create systems that fulfill their unique privacy needs and requirements. Disempowered populations often experience disparate harms from the loss of privacy but, typically, have a limited role in formulating the scope and nature of such interventions, and accompanying (implicit or explicit) privacy policies and consequent engineering processes. This gap can be addressed by including recipient communities in designing these privacy policies.<br />
+We propose a participatory design model for data-centric applications where privacy policies (norms) emerge out of participation of the community in the research/design process. The framework of Contextual Integrity which articulates privacy as respect for normative rules of information flow in specific contexts, lends itself well to enable a community-generated formulation of these privacy norms within the contexts of the proposed intervention. Employing formal logic, these privacy norms can then be used to engineer systems capable of regulating the flow of information as per the negotiated norms. This entire process which we call Contextualized Participatory Privacy by Design, seeks to empower communities in negotiating and articulating their privacy norms, leading to the development of systems that are capable of enforcing what they deem as ethical, contextualized use of their data.</div>
+</div>
+
+<div class="list-group-item"><b><a data-parent="#session4" data-toggle="collapse" href="#paper7">Enhancing Transparency and Consent in the IoT </a></b> <!--<a href='./slides/S3-P2-SouryaJoyeeDe.pdf'>(slides)</a>--><br />
+Victor Morel, Daniel Le M&eacute;tayer, <u>Mathieu&nbsp;Cunche</u>&nbsp;and Claude Castelluccia</div>
+
+<div class="panel-collapse collapse" id="paper7">
+<div class="panel-body" style="margin-left: 1.5em;">The development of the IoT raises specific questions in terms of privacy, especially with respect to information to users and consent. We argue that (1) all necessary information about collected data and the collecting devices should be communicated electronically to all data subjects in their range and (2) data subjects should be able to reply also electronically and express their own privacy choices. In this position paper, we take some examples of technologies and initiatives to illustrate our position (including direct and registry-based communications) and discuss them in the light of the GDPR and the WP29 recommendations.</div>
+</div>
+
+<div class="list-group-item"><b><a data-parent="#session4" data-toggle="collapse" href="#paper8">Privacy Compliance via Model Transformations </a></b> <a href='./slides/S43.pdf'>(slides)</a><br />
+Thibaud Antignac, <u>Riccardo Scandariato</u> and Gerardo Schneider</div>
+
+<div class="panel-collapse collapse" id="paper8">
+<div class="panel-body" style="margin-left: 1.5em;">Due to the upcoming, more restrictive regulations (like the European GDPR), designing privacy preserving architectures for information systems is becoming a pressing concern for practitioners. In particular, verifying that a design is compliant with the regulations might be a challenging task for engineers. This work presents an approach based on model transformations, which guarantee that an architectural design encompasses regulation-oriented principles such as purpose limitation, or accountability of the data controller. Our work improves the state of the art along two main dimensions. The approach we propose (i) embeds privacy principles coming from regulations, thus helping to bridge the gap between the technical and the legal worlds, (ii) systematize the embedding of the privacy principles coming from regulations, thus enabling a constructive approach to privacy by design.</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel-group" id="panel2">
+<div class="panel panel-default">
+<div class="panel-heading">
+<div class="row">
+<div class="col-md-6 pull-left">
+<h3 class="panel-title"><b><a data-parent="#panel2" data-toggle="collapse" href="#abstractPanel2">Panel: Portability and Authentication</a> </b><br />
+Moderator: Jose Such (King&#39;s College London)<br />
+Panel: Engin Bozdag (Philips), Nikos Laoutaris (Telefonica), Gavin Ray (Digi.me)</h3>
+</div>
+
+<div class="col-md-6 pull-right">
+<h3 class="panel-title text-right">4:50AM - 5:30PM</h3>
+</div>
+</div>
+</div>
+
+<div class="panel-collapse collapse" id="abstractPanel2">
+<div class="panel-body" style="margin-left: 1.5em;"><!--Panel abstract.-->This panel will discuss new mechanisms that are emerging for inter-service data transfer, including new storage architectures as well as security and authentication mechanisms needed to support portability.<br />
+<br />
+<i><b>Engin Bozdag</b> is a Privacy by Design expert at Philips.</i><br />
+<i><b>Nikos Laoutaris </b> is a senior researcher at the Internet Scientific Group of Telefonica Research.</i><br />
+<i><strong>Gavin Ray</strong> is the CTO of Digi.me.</i></div>
+</div>
+</div>
+</div>
+
+<div class="panel-group" id="closing">
+<div class="panel panel-default">
+<div class="panel-heading">
+<div class="row">
+<div class="col-md-6 pull-left">
+<h3 class="panel-title">Wrap-up and Concluding Remarks</h3>
+</div>
+
+<div class="col-md-6 pull-right">
+<h3 class="panel-title text-right">5:30PM</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /.article-content --><!-- End content--><!-- /.content --><!-- /.content-wrapper --></div>
+<!-- /.inner-wrap --></div>
+<!-- /.outer-wrap --></div>
+</body>
+</html>
